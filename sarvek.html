@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is SarvEk?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #AC8BD2;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease;
+    }
+
+    .heading ,h1 {
+      text-align: center;
+      font-weight: 900;
+      
+      font-size: 55px;
+      color: #FFFFFF;
+      /* Purple */
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .mission {
+      margin-bottom: 30px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .mission p {
+      line-height: 1.6;
+      font-size: 25px;
+      color: #4d2676;
+      border: 2px solid #210062;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #fff;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      animation: scaleIn 1s ease-out;
+    }
+
+    .card {
+      width: calc(50% - 10px);
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
+      animation: fadeInUp 0.8s ease, scaleInCard 0.8s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #6a0dad;
+      /* Purple */
+      margin-bottom: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .section-description {
+      line-height: 1.6;
+      color: #333;
+      font-size: 25px;
+      animation: fadeInUp 1.1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0.8);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes scaleInCard {
+      from {
+        transform: scale(0.9);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    /* Media query for responsiveness */
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+        /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      What is SarvEk?
+    </div>
+    <div class="mission">
+      <p>SarvEk is dedicated to promoting sustainability, saving plants, addressing climate change, and reducing our carbon footprint. Our mission is to create a platform where NGOs, volunteers, and student clubs can collaborate effectively to achieve these goals.</p>
+    </div>
+    <h1>What is our Motive?</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="section-title">Empowerment</div>
+        <div class="section-description">Empowering individuals and student clubs to make a tangible impact in areas like sustainability, animal welfare, social welfare, and student support.</div>
+      </div>
+      <div class="card">
+        <div class="section-title">Connection</div>
+        <div class="section-description">Connecting NGOs with volunteers and donors, fostering collaboration and community engagement.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="section-title">Education</div>
+        <div class="section-description">Providing resources such as case studies and blogs to raise awareness and inspire informed action.</div>
+      </div>
+      <div class="card">
+        <div class="section-title">Impact</div>
+        <div class="section-description">Driving meaningful change by supporting initiatives that address critical societal and environmental challenges.</div>
+      </div>
+    </div>
+    <h1>Our Sections</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="section-title">Sustainability</div>
+        <div class="section-description">This section focuses on initiatives aimed at preserving the environment and promoting sustainable practices. Users can volunteer with NGOs involved in tree conservation, participate in sustainability-focused events, donate to environmental causes, and access educational resources such as case studies and blogs that highlight effective sustainability efforts.</div>
+      </div>
+      <div class="card">
+        <div class="section-title">Animal Welfare</div>
+        <div class="section-description">Dedicated to improving the lives of animals, particularly street animals. Users can volunteer with NGOs engaged in rescuing, sheltering, and neutering street animals. The platform facilitates donations to support these efforts and provides educational content on responsible pet ownership and animal welfare issues.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="section-title">Student Welfare</div>
+        <div class="section-description">Aimed at supporting students' educational needs and overall welfare. This section includes opportunities to volunteer or donate to NGOs that provide free education, scholarships, or support services to students, especially those from underprivileged backgrounds. It also offers resources and information on educational rights and opportunities.</div>
+      </div>
+      <div class="card">
+        <div class="section-title">Social Welfare</div>
+        <div class="section-description">Focused on addressing social issues and supporting vulnerable populations. NGOs in this section may focus on areas such as domestic violence prevention, support for teen mothers, care for elderly individuals without family support, and other critical social causes. Users can volunteer their time, donate resources, or participate in awareness campaigns to support these initiatives.</div>
+      </div>
+    </div>
+        <div class="mission">
+      <p>Each part of Sarvek aims to facilitate meaningful engagement and support for causes that contribute to a more sustainable, compassionate, and equitable society.</p>
+    </div>
+  </div>
+</body>
+
+</html>
